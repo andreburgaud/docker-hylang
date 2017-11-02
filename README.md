@@ -1,6 +1,6 @@
 # Project
 
-Docker image for Hy based on Alpine Linux.
+Docker image for Hy (Hylang) based on Alpine Linux.
 
 # Hy (Hylang)
 
@@ -18,16 +18,27 @@ $ docker pull andreburgaud/hylang
 
 ```
 $ docker run -it --rm andreburgaud/hylang
+hy 0.13.0+173.g49d2523 using CPython(default) 3.6.1 on Linux
+=> (print "Hy")
+Hy
+=> (exit)
+$
 ```
 
 # Start Python REPL
 
 ```
 $ docker run -it --rm andreburgaud/hylang python
+Python 3.6.1 (default, Oct  2 2017, 20:46:59)
+[GCC 6.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print('Python')
+Python
+>>> exit()
+$
 ```
 
-
-# Start a basic shell
+# Start the default shell
 
 ```
 $ docker run -it --rm andreburgaud/hylang sh
