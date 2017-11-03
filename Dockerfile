@@ -1,8 +1,8 @@
-FROM       alpine:3.6
-LABEL      hylang.version=0.13.0-11012017
-LABEL      python.version=3.6.1-r3
+FROM       alpine:edge
+LABEL      hylang.version=0.13.1
+LABEL      python.version=3.6.3-r5
 
-RUN apk add --no-cache python3 && \
+RUN apk add --no-cache python3=3.6.3-r5 && \
     python3 -m ensurepip && \
     rm -r /usr/lib/python*/ensurepip && \
     pip3 install --upgrade pip setuptools && \
@@ -12,7 +12,7 @@ RUN apk add --no-cache python3 && \
 
 RUN apk add --no-cache git && \
     pip install --upgrade astor && \
-    pip install git+https://github.com/hylang/hy.git && \
+    pip install git+git://github.com/hylang/hy.git@v0.13.1 && \
     apk del git
 
 CMD ["hy"]
