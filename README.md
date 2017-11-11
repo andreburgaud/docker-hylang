@@ -18,9 +18,12 @@ $ docker pull andreburgaud/hylang
 
 ```
 $ docker run -it --rm andreburgaud/hylang
-hy 0.13.1 using CPython(default) 3.6.3 on Linux
+hy 0.13.0+176.g97987d7 using CPython(default) 3.6.3 on Linux
 => (print "Hy")
 Hy
+=> (import astor)
+=> (print astor.__version__)
+0.6.1
 => (exit)
 $
 ```
@@ -48,7 +51,7 @@ Python 3.6.3 (default, Nov  2 2017, 12:57:36)
 Type "help", "copyright", "credits" or "license" for more information.
 >>> exit()
 / # hy
-hy 0.13.1 using CPython(default) 3.6.3 on Linux
+hy 0.13.0+176.g97987d7 using CPython(default) 3.6.3 on Linux
 => (exit)
 / # exit
 $
