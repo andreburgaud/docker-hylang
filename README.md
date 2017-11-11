@@ -32,7 +32,7 @@ $
 
 ```
 $ docker run -it --rm andreburgaud/hylang python
-Python 3.6.3 (default, Nov  2 2017, 12:57:36)
+Python 3.6.3 (default, Nov 10 2017, 03:18:08)
 [GCC 6.4.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> print('Python')
@@ -46,7 +46,7 @@ $
 ```
 $ docker run -it --rm andreburgaud/hylang sh
 / # python
-Python 3.6.3 (default, Nov  2 2017, 12:57:36)
+Python 3.6.3 (default, Nov 10 2017, 03:18:08)
 [GCC 6.4.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> exit()
