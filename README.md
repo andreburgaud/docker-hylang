@@ -18,12 +18,12 @@ $ docker pull andreburgaud/hylang
 
 ```
 $ docker run -it --rm andreburgaud/hylang
-hy 0.13.0+176.g97987d7 using CPython(default) 3.6.3 on Linux
+hy 0.14.0 using CPython(default) 3.6.3 on Linux
 => (print "Hy")
 Hy
 => (import astor)
 => (print astor.__version__)
-0.6.1
+0.6.2
 => (exit)
 $
 ```
@@ -32,11 +32,15 @@ $
 
 ```
 $ docker run -it --rm andreburgaud/hylang python
-Python 3.6.3 (default, Nov 10 2017, 03:18:08)
+Python 3.6.3 (default, Nov 21 2017, 14:55:19)
 [GCC 6.4.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> print('Python')
 Python
+>>> import sys
+>>> print(sys.version)
+3.6.3 (default, Nov 21 2017, 14:55:19)
+[GCC 6.4.0]
 >>> exit()
 $
 ```
@@ -46,12 +50,12 @@ $
 ```
 $ docker run -it --rm andreburgaud/hylang sh
 / # python
-Python 3.6.3 (default, Nov 10 2017, 03:18:08)
+Python 3.6.3 (default, Nov 21 2017, 14:55:19)
 [GCC 6.4.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> exit()
 / # hy
-hy 0.13.0+176.g97987d7 using CPython(default) 3.6.3 on Linux
+hy 0.14.0 using CPython(default) 3.6.3 on Linux
 => (exit)
 / # exit
 $
@@ -59,4 +63,4 @@ $
 
 # License
 
-MIT License (see LICENSE file)
+MIT License (see [LICENSE file](LICENSE.md))
