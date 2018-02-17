@@ -63,4 +63,4 @@ $
 
 # License
 
-MIT License (see [LICENSE file](LICENSE.md))
+MIT License
