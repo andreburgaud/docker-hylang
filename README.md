@@ -18,12 +18,12 @@ $ docker pull andreburgaud/hylang
 
 ```
 $ docker run -it --rm andreburgaud/hylang
-hy 0.14.0 using CPython(default) 3.6.3 on Linux
+hy 0.15.0 using CPython(default) 3.7.0 on Linux
 => (print "Hy")
 Hy
 => (import astor)
 => (print astor.__version__)
-0.6.2
+0.7.1
 => (exit)
 $
 ```
@@ -32,14 +32,14 @@ $
 
 ```
 $ docker run -it --rm andreburgaud/hylang python
-Python 3.6.3 (default, Nov 21 2017, 14:55:19)
+Python 3.7.0 (default, Jul 16 2018, 23:44:28)
 [GCC 6.4.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> print('Python')
 Python
 >>> import sys
 >>> print(sys.version)
-3.6.3 (default, Nov 21 2017, 14:55:19)
+3.7.0 (default, Jul 16 2018, 23:44:28)
 [GCC 6.4.0]
 >>> exit()
 $
@@ -50,12 +50,12 @@ $
 ```
 $ docker run -it --rm andreburgaud/hylang sh
 / # python
-Python 3.6.3 (default, Nov 21 2017, 14:55:19)
+Python 3.7.0 (default, Jul 16 2018, 23:44:28)
 [GCC 6.4.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> exit()
 / # hy
-hy 0.14.0 using CPython(default) 3.6.3 on Linux
+hy 0.15.0 using CPython(default) 3.7.0 on Linux
 => (exit)
 / # exit
 $
