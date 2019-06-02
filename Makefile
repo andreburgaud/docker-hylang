@@ -14,9 +14,9 @@ endif
 	@echo 'Usage:'
 	@echo '    make clean           Delete dangling and Hylang images'
 	@echo '    make build           Build the Hylang image using local Dockerfile'
-	@echo '    make github          Push code and tag to GitHub'
-	@echo '    make dockerhub       Push image to DockerHub'
-	@echo '    make deploy          Clean, build and push image to DockerHub'
+	@echo '    make github'
+	@echo '      - Push code and tag to GitHub (commit manually first)'
+	@echo '      - Trigger automated DockerHub build'
 	@echo
 
 validate:
@@ -44,11 +44,4 @@ github: validate
 	git tag -a ${TAG} -m 'Version ${TAG}'
 	git push origin --tags
 
-dockerhub:
-	docker push docker.io/${IMAGE}:${TAG}
-	docker tag ${IMAGE}:${TAG} docker.io/${IMAGE}:latest
-	docker push docker.io/${IMAGE}:latest
-
-deploy: clean build dockerhub
-
-.PHONY: help validate build clean deploy github dockerhub
+.PHONY: help validate build clean github
