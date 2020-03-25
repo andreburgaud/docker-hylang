@@ -1,6 +1,6 @@
-FROM    python:3.7.3-alpine3.9
+FROM    python:3.8.2-alpine3.11
 
-ENV     HYLANG_VERSION=0.17.0 \
+ENV     HYLANG_VERSION=0.18.0 \
         maintainer="andre.burgaud@gmail.com"
 
 LABEL   hylang.version=$HYLANG_VERSION
