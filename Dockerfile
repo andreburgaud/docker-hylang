@@ -6,7 +6,7 @@ ENV     HYLANG_VERSION=0.20.0 \
 LABEL   hylang.version=$HYLANG_VERSION
 LABEL   python.version=$PYTHON_VERSION
 
-RUN     pip install --upgrade pip --no-cache-dir && \
-        pip install hy==$HYLANG_VERSION --no-cache-dir
+RUN     pip install --no-cache-dir --upgrade pip && \
+        pip install --no-cache-dir hy==$HYLANG_VERSION
 
 CMD ["hy"]
