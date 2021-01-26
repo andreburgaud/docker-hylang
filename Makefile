@@ -4,7 +4,7 @@ IMAGE:=andreburgaud/hylang
 default: help
 
 build:
-	docker build -t ${IMAGE}:${TAG} .
+	DOCKER_BUILDKIT=1 docker build -t ${IMAGE}:${TAG} .
 
 clean:
 	# Remove containers with exited status:
