@@ -1,4 +1,4 @@
-TAG:=0.20.0
+TAG:=1.0a1
 IMAGE:=andreburgaud/hylang
 
 default: help
