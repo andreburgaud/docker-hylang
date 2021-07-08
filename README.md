@@ -57,7 +57,7 @@ $
 
 # Hylang Interpretor Coloring
 
-The file `hyrc.hy` that provide coloring for the Hylang REPL was created from a file shared by [Allie Joe Casey](https://github.com/allison-casey) in the following Gist: https://gist.github.com/allison-casey/924912d86826f9b7b2e97f8bcff5e548
+The file `hyrc.hy` that provides coloring for the Hylang REPL was created from a file shared by [Allie Joe Casey](https://github.com/allison-casey) in the following Gist: https://gist.github.com/allison-casey/924912d86826f9b7b2e97f8bcff5e548
 
 
 # License
