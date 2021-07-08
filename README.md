@@ -18,12 +18,9 @@ $ docker pull andreburgaud/hylang
 
 ```
 $ docker run -it --rm andreburgaud/hylang
-hy 1.0a1 using CPython(default) 3.10.0a7 on Linux
+hy 1.0a2 using CPython(default) 3.10.0b3 on Linux
 => (print "Hy")
 Hy
-=> (import astor)
-=> (print astor.__version__)
-0.8.1
 => (exit)
 $
 ```
@@ -32,13 +29,13 @@ $
 
 ```
 $ docker run -it --rm andreburgaud/hylang python
-Python 3.10.0a7 (default, Apr 15 2021, 04:32:02) [GCC 10.2.1 20201203] on linux
+Python 3.10.0b3 (default, Jun 29 2021, 01:21:25) [GCC 10.3.1 20210424] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> print('Python')
 Python
 >>> import sys
 >>> print(sys.version)
-3.10.0a7 (default, Apr 15 2021, 04:32:02) [GCC 10.2.1 20201203]
+3.10.0b3 (default, Jun 29 2021, 01:21:25) [GCC 10.3.1 20210424]
 >>> exit()
 $
 ```
@@ -48,15 +45,20 @@ $
 ```
 $ docker run -it --rm andreburgaud/hylang sh
 / # python
-Python 3.10.0a7 (default, Apr 15 2021, 04:32:02) [GCC 10.2.1 20201203] on linux
+Python 3.10.0b3 (default, Jun 29 2021, 01:21:25) [GCC 10.3.1 20210424] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> exit()
 / # hy
-hy 1.0a1 using CPython(default) 3.10.0a7 on Linux
+hy 1.0a2 using CPython(default) 3.10.0b3 on Linux
 => (exit)
 / # exit
 $
 ```
+
+# Hylang Interpretor Coloring
+
+The file `hyrc.hy` that provide coloring for the Hylang REPL was created from a file shared by [Allie Joe Casey](https://github.com/allison-casey) in the following Gist: https://gist.github.com/allison-casey/924912d86826f9b7b2e97f8bcff5e548
+
 
 # License
 

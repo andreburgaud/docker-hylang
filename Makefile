@@ -1,10 +1,10 @@
-TAG:=1.0a1
+TAG:=1.0a2
 IMAGE:=andreburgaud/hylang
 
 default: help
 
 build:
-	DOCKER_BUILDKIT=1 docker build -t ${IMAGE}:${TAG} .
+	docker buildx build -t ${IMAGE}:${TAG} .
 
 clean:
 	# Remove containers with exited status:
