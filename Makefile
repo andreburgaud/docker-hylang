@@ -1,10 +1,13 @@
-TAG:=1.0a2
+TAG:=1.0a3
 IMAGE:=andreburgaud/hylang
 
 default: help
 
 build:
 	docker buildx build -t ${IMAGE}:${TAG} .
+
+run:
+	docker run --rm -it ${IMAGE}:${TAG}
 
 clean:
 	# Remove containers with exited status:

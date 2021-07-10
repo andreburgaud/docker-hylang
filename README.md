@@ -18,7 +18,7 @@ $ docker pull andreburgaud/hylang
 
 ```
 $ docker run -it --rm andreburgaud/hylang
-hy 1.0a2 using CPython(default) 3.10.0b3 on Linux
+hy 1.0a3 using CPython(default) 3.10.0b3 on Linux
 => (print "Hy")
 Hy
 => (exit)
@@ -49,7 +49,7 @@ Python 3.10.0b3 (default, Jun 29 2021, 01:21:25) [GCC 10.3.1 20210424] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> exit()
 / # hy
-hy 1.0a2 using CPython(default) 3.10.0b3 on Linux
+hy 1.0a3 using CPython(default) 3.10.0b3 on Linux
 => (exit)
 / # exit
 $
